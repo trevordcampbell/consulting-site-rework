@@ -85,11 +85,11 @@ function MobileNavigation() {
             as="div"
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
           >
-            <MobileNavLink href="#features">Features</MobileNavLink>
-            <MobileNavLink href="#testimonials">Testimonials</MobileNavLink>
-            <MobileNavLink href="#pricing">Pricing</MobileNavLink>
-            <hr className="m-2 border-slate-300/40" />
-            <MobileNavLink href="/login">Sign in</MobileNavLink>
+              <NavLink href="#services">Services</NavLink>
+              <NavLink href="#usecases">Use Cases</NavLink>
+              <NavLink href="#recipes">AI Recipes</NavLink>
+              <NavLink href="#large-language-models">Large Language Models</NavLink>
+              <NavLink href="#process">Success Stories</NavLink>
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>

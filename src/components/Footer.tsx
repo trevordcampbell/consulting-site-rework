@@ -7,11 +7,11 @@ import { NavLink } from '@/components/NavLink'
 export function Footer() {
   return (
     <footer className="bg-slate-50">
-      <Container>
+      <Container className='overflow-hidden'>
         <div className="py-16">
           <Logo className="mx-auto h-10 w-auto" />
           <nav className="mt-10 text-sm" aria-label="quick links">
-            <div className="-my-1 flex justify-center gap-x-6">
+            <div className="-my-1 mx-auto grid sm:flex item-center justify-center gap-x-6">
               <NavLink href="#services">Services</NavLink>
               <NavLink href="#usecases">Use Cases</NavLink>
               <NavLink href="#recipes">AI Recipes</NavLink>
