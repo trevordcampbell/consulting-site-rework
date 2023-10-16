@@ -8,7 +8,7 @@
     "React": false // Allow React to be undefined, since NextJS does not require it to be defined.
   },
   "rules": {
-    "no-unused-vars": 1,  // Set to Warn
-    "react/no-unescaped-entities": 1  // Set to Warn
+    "no-unused-vars": 1, // Set to Warn
+    "react/no-unescaped-entities": 1 // Set to Warn
   }
 }
