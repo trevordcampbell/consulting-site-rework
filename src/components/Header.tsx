@@ -85,11 +85,11 @@ function MobileNavigation() {
             as="div"
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
           >
-              <NavLink href="#services">Services</NavLink>
-              <NavLink href="#usecases">Use Cases</NavLink>
-              <NavLink href="#recipes">AI Recipes</NavLink>
-              <NavLink href="#large-language-models">Large Language Models</NavLink>
-              <NavLink href="#process">Success Stories</NavLink>
+              <MobileNavLink href="/#usecases">Use Cases</MobileNavLink>
+              <MobileNavLink href="/#recipes">AI Recipes</MobileNavLink>
+              <MobileNavLink href="/#large-language-models">Large Language Models</MobileNavLink>
+              <MobileNavLink href="/work">Our Work</MobileNavLink>
+              <MobileNavLink href="/blog">Our Blog</MobileNavLink>
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>
@@ -103,19 +103,19 @@ export function Header() {
       <Container>
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
-            <Link href="#" aria-label="Home">
+            <Link href="/" aria-label="Home">
               <Logo className="h-10 w-auto" />
             </Link>
             <div className="hidden md:flex md:gap-x-6">
-              <NavLink href="#services">Services</NavLink>
-              <NavLink href="#usecases">Use Cases</NavLink>
-              <NavLink href="#recipes">AI Recipes</NavLink>
-              <NavLink href="#large-language-models">Large Language Models</NavLink>
-              <NavLink href="#process">Success Stories</NavLink>
+              <NavLink href="/#usecases">Use Cases</NavLink>
+              <NavLink href="/#recipes">AI Recipes</NavLink>
+              <NavLink href="/#large-language-models">Large Language Models</NavLink>
+              <NavLink href="/work">Our Work</NavLink>
+              <NavLink href="/blog">Our Blog</NavLink>
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
-            <Button href="#contact" color="blue">
+            <Button href="/#contact" color="blue">
               <span>
                 Contact Us!
               </span>

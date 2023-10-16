@@ -9,14 +9,16 @@ export function Footer() {
     <footer className="bg-slate-50">
       <Container className='overflow-hidden'>
         <div className="py-16">
-          <Logo className="mx-auto h-10 w-auto" />
+          <Link href="/" aria-label="Home">
+            <Logo className="mx-auto h-10 w-auto" />
+          </Link>
           <nav className="mt-10 text-sm" aria-label="quick links">
             <div className="-my-1 mx-auto grid sm:flex item-center justify-center gap-x-6">
-              <NavLink href="#services">Services</NavLink>
-              <NavLink href="#usecases">Use Cases</NavLink>
-              <NavLink href="#recipes">AI Recipes</NavLink>
-              <NavLink href="#large-language-models">Large Language Models</NavLink>
-              <NavLink href="#process">Success Stories</NavLink>
+              <NavLink href="/#usecases">Use Cases</NavLink>
+              <NavLink href="/#recipes">AI Recipes</NavLink>
+              <NavLink href="/#large-language-models">Large Language Models</NavLink>
+              <NavLink href="/work">Our Work</NavLink>
+              <NavLink href="/blog">Our Blog</NavLink>
             </div>
           </nav>
         </div>

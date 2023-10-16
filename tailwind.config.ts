@@ -1,9 +1,10 @@
 import formsPlugin from '@tailwindcss/forms'
 import headlessuiPlugin from '@headlessui/tailwindcss'
 import { type Config } from 'tailwindcss'
+import defaultTheme from 'tailwindcss/defaultTheme'
 
 export default {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: ['./src/**/*.{js,jsx,mdx,ts,tsx}'],
   theme: {
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
@@ -24,9 +25,16 @@ export default {
       borderRadius: {
         '4xl': '2rem',
       },
+      // fontFamily: {
+      //   sans: 'var(--font-inter)',
+      //   display: 'var(--font-lexend)',
+      // },
       fontFamily: {
-        sans: 'var(--font-inter)',
-        display: 'var(--font-lexend)',
+        sans: ['var(--font-inter)', ...defaultTheme.fontFamily.sans],
+        display: [
+          ['var(--font-lexend)', ...defaultTheme.fontFamily.sans],
+          { fontVariationSettings: '"wdth" 125' },
+        ],
       },
       maxWidth: {
         '2xl': '40rem',

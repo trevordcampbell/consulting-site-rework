@@ -1,14 +1,14 @@
-import { Contact } from '@/components/Contact'
-import { Usecases } from '@/components/Usecases'
+import { Contact } from '@/components/marketing/Contact'
+import { Usecases } from '@/components/marketing/Usecases'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
-import { Hero } from '@/components/Hero'
-import { Process } from '@/components/Process'
-import { LargeLanguageModels } from '@/components/LargeLanguageModels'
-import { SuccessStories } from '@/components/SuccessStories'
-import { Testimonials } from '@/components/Testimonials'
-import { Recipes } from '@/components/Recipes'
-import { PrimaryServices } from '@/components/PrimaryServices'
+import { Hero } from '@/components/marketing/Hero'
+import { Process } from '@/components/marketing/Process'
+import { LargeLanguageModels } from '@/components/marketing/LargeLanguageModels'
+import { SuccessStories } from '@/components/marketing/SuccessStories'
+import { Testimonials } from '@/components/marketing/Testimonials'
+import { Recipes } from '@/components/marketing/Recipes'
+import { PrimaryServices } from '@/components/marketing/PrimaryServices'
 
 export default function Home() {
   return (

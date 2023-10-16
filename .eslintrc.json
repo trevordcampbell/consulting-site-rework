@@ -5,10 +5,10 @@
     "project": "./tsconfig.json" // Use the project's TypeScript configuration file
   },
   "globals": {
-    "React": false // Allow React to be undefined
+    "React": false // Allow React to be undefined, since NextJS does not require it to be defined.
   },
   "rules": {
-    "no-unused-vars": "off",
-    "react/no-unescaped-entities": "off"
+    "no-unused-vars": 1,  // Set to Warn
+    "react/no-unescaped-entities": 1  // Set to Warn
   }
 }

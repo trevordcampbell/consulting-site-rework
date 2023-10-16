@@ -1,27 +1,26 @@
-import Link from 'next/link'
-
-import { Button } from '@/components/Button'
-import { Logo } from '@/components/Logo'
-import { SlimLayout } from '@/components/SlimLayout'
+import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 
 export default function NotFound() {
   return (
-    <SlimLayout>
-      <div className="flex">
-        <Link href="/" aria-label="Home">
-          <Logo className="h-10 w-auto" />
-        </Link>
-      </div>
-      <p className="mt-20 text-sm font-medium text-gray-700">404</p>
-      <h1 className="mt-3 text-lg font-semibold text-gray-900">
-        Page not found
-      </h1>
-      <p className="mt-3 text-sm text-gray-700">
-        Sorry, we couldn’t find the page you’re looking for.
-      </p>
-      <Button href="/" className="mt-10">
-        Go back home
-      </Button>
-    </SlimLayout>
+    <>
+      <Header />
+      <main className="grid min-h-fit place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
+        <div className="text-center">
+          <p className="text-base font-semibold text-blue-600">404</p>
+          <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Page not found</h1>
+          <p className="mt-6 text-base leading-7 text-gray-600">Sorry, we couldn’t find the page you’re looking for.</p>
+          <div className="mt-10 flex items-center justify-center gap-x-6">
+            <a
+              href="/"
+              className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+            >
+              Go back home
+            </a>
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </>
   )
 }
