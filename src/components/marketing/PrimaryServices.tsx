@@ -1,9 +1,13 @@
-
 import Image from 'next/image'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-features.jpg'
-import { UsersIcon, PuzzlePieceIcon, BriefcaseIcon, NewspaperIcon } from '@heroicons/react/24/solid'
+import {
+  UsersIcon,
+  PuzzlePieceIcon,
+  BriefcaseIcon,
+  NewspaperIcon,
+} from '@heroicons/react/24/solid'
 
 const services = [
   {
@@ -34,9 +38,6 @@ const services = [
     href: '#',
     icon: NewspaperIcon,
   },
-
-
-  
 ]
 
 export function PrimaryServices() {
@@ -60,16 +61,23 @@ export function PrimaryServices() {
             Everything you need to Boost Efficiency & ROI
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Here&apos;s a range of the services we offer to our customers in Healthcare, Fintech, and other industries
+            Here&apos;s a range of the services we offer to our customers in
+            Healthcare, Fintech, and other industries
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
             {services.map((service) => (
-              <div key={service.name} className="flex flex-col bg-white p-6 shadow-xl shadow-blue-700/30 rounded-3xl border-8 border-blue-600/50">
-                <dt className="text-2xl font-display font-semibold leading-7 text-blue-600">
+              <div
+                key={service.name}
+                className="flex flex-col rounded-3xl border-8 border-blue-600/50 bg-white p-6 shadow-xl shadow-blue-700/30"
+              >
+                <dt className="font-display text-2xl font-semibold leading-7 text-blue-600">
                   <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-600">
-                    <service.icon className="h-8 w-8 text-white" aria-hidden="true" />
+                    <service.icon
+                      className="h-8 w-8 text-white"
+                      aria-hidden="true"
+                    />
                   </div>
                   {service.name}
                 </dt>

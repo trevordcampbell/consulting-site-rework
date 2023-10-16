@@ -26,10 +26,14 @@ export default async function Blog() {
   return (
     <>
       <Header />
-      <main className=''>
-        <PageIntro eyebrow="Blog" title="The latest articles and news from our team">
+      <main className="">
+        <PageIntro
+          eyebrow="Blog"
+          title="The latest articles and news from our team"
+        >
           <p>
-            Stay up-to-date with all the things our team is working on with technical articles and industry discussion.
+            Stay up-to-date with all the things our team is working on with
+            technical articles and industry discussion.
           </p>
         </PageIntro>
 
@@ -75,8 +79,8 @@ export default async function Blog() {
                           href={article.href}
                           aria-label={`Read more: ${article.title}`}
                           className="mt-8"
-                          variant='solid'
-                          color='blue'
+                          variant="solid"
+                          color="blue"
                         >
                           Read more
                         </Button>
@@ -90,9 +94,8 @@ export default async function Blog() {
         </Container>
 
         <Contact />
-
       </main>
-      
+
       <Footer />
     </>
   )

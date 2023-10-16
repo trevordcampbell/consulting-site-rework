@@ -27,10 +27,15 @@ export default async function BlogArticleWrapper({
       <Header />
       <Container as="article" className="">
         <FadeIn>
-          <PageIntro eyebrow={formatDate(article.date)} title={article.title} centered>
-            <p className="mt-6 text-sm font-semibold text-neutral-950">by {article.author.name}, {article.author.role}</p>
+          <PageIntro
+            eyebrow={formatDate(article.date)}
+            title={article.title}
+            centered
+          >
+            <p className="mt-6 text-sm font-semibold text-neutral-950">
+              by {article.author.name}, {article.author.role}
+            </p>
           </PageIntro>
-
         </FadeIn>
 
         <FadeIn>

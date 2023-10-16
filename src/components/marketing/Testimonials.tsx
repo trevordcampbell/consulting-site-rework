@@ -9,7 +9,6 @@ import avatarImage5 from '@/images/avatars/avatar-5.png'
 
 import backgroundImage from '@/images/background-features.jpg'
 
-
 const testimonials = [
   [
     {
@@ -114,7 +113,7 @@ export function Testimonials() {
               <ul role="list" className="flex flex-col gap-y-6 sm:gap-y-8">
                 {column.map((testimonial, testimonialIndex) => (
                   <li key={testimonialIndex}>
-                    <figure className="relative bg-white p-6 shadow-xl shadow-blue-700/30 rounded-3xl border-8 border-blue-600/50">
+                    <figure className="relative rounded-3xl border-8 border-blue-600/50 bg-white p-6 shadow-xl shadow-blue-700/30">
                       <QuoteIcon className="absolute left-6 top-6 fill-slate-100" />
                       <blockquote className="relative">
                         <p className="text-lg tracking-tight text-blue-900">
