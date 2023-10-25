@@ -183,15 +183,15 @@ function CaseElement({recipe}: {recipe: Recipe}) {
             </dl>
           </div>
         </div>
-        <Image
-          className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
-          src={recipe.image}
-          alt=""
-          sizes="52.75rem"
-          objectFit='cover'
-          width={2432}
-          height={1442}
-        />
+          <Image
+            className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+            src={recipe.image}
+            alt=""
+            sizes="52.75rem"
+            objectFit='cover'
+            width={2432}
+            height={1442}
+          />
       </div>
     )
   }
