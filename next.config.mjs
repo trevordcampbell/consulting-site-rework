@@ -16,7 +16,9 @@ const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
   images: {
     domains: [
-      "landingfoliocom.imgix.net", "tailwindui.com", "images.pexels.com",
+      'landingfoliocom.imgix.net',
+      'tailwindui.com',
+      'images.pexels.com',
     ],
   },
 }

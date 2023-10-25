@@ -66,7 +66,7 @@ function CaseStudies({
                   </div>
                 </div>
                 <div className="col-span-full lg:col-span-2 lg:max-w-2xl">
-                  <p className="font-display text-4xl font-medium text-blue-60-0">
+                  <p className="text-blue-60-0 font-display text-4xl font-medium">
                     <Link href={caseStudy.href}>{caseStudy.title}</Link>
                   </p>
                   <div className="mt-6 space-y-6 text-base text-neutral-600">
@@ -78,8 +78,8 @@ function CaseStudies({
                     <Button
                       href={caseStudy.href}
                       aria-label={`Read case study: ${caseStudy.client}`}
-                      variant='solid'
-                      color='blue'
+                      variant="solid"
+                      color="blue"
                     >
                       Read case study
                     </Button>
@@ -113,13 +113,9 @@ const clients = [
   ['North Adventures', logoNorthAdventures],
 ]
 
-function Clients({className,}: {className?: string}) {
+function Clients({ className }: { className?: string }) {
   return (
-    <Container className={clsx(
-      'mt-24 sm:mt-32 lg:mt-40',
-      className)
-      }
-    >
+    <Container className={clsx('mt-24 sm:mt-32 lg:mt-40', className)}>
       <FadeIn>
         <h2 className="font-display text-2xl font-semibold text-neutral-950">
           You’re in good company
@@ -158,14 +154,15 @@ export default async function Work() {
   return (
     <>
       <Header />
-      <main className='pb-24 sm:pb-32 lg:pb-40'>
+      <main className="pb-24 sm:pb-32 lg:pb-40">
         <PageIntro
           eyebrow="Our work"
           title="Proven solutions for real-world problems."
         >
           <p>
             We believe in efficiency and maximizing our resources to provide the
-            best value to our clients. Discover how our AI-powered solutions have catalyzed operational excellence across diverse sectors.
+            best value to our clients. Discover how our AI-powered solutions
+            have catalyzed operational excellence across diverse sectors.
           </p>
         </PageIntro>
 

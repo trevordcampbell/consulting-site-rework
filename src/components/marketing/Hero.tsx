@@ -13,7 +13,7 @@ export function Hero() {
   return (
     <Container className="pb-16 pt-20 text-center lg:pt-32">
       <h1 className="mx-auto max-w-4xl font-display text-4xl font-medium tracking-tight text-slate-900 sm:text-7xl">
-      Boost Efficiency & ROI with {' '}
+        Boost Efficiency & ROI with{' '}
         <span className="relative whitespace-nowrap text-blue-600">
           <svg
             aria-hidden="true"
@@ -28,7 +28,9 @@ export function Hero() {
         AI-powered solutions.
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        We offer a range of turnkey and ground-up customized software solutions, backed by a top-tier team specializing in AI for fintech, healthcare, and other industries.
+        We offer a range of turnkey and ground-up customized software solutions,
+        backed by a top-tier team specializing in AI for fintech, healthcare,
+        and other industries.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
         <Button href="#services">Learn More</Button>
@@ -47,7 +49,8 @@ export function Hero() {
       </div>
       <div className="mt-36 lg:mt-44">
         <p className="font-display text-base text-slate-900">
-          Trusted by the biggest names in Heathcare, Fintech, and other industries:
+          Trusted by the biggest names in Heathcare, Fintech, and other
+          industries:
         </p>
         <ul
           role="list"
@@ -81,10 +84,12 @@ export function Hero() {
         </ul>
         <div className="mt-8 flex justify-center">
           <p className="relative rounded-full bg-gray-50 px-4 py-1.5 text-sm leading-6 text-gray-600 ring-1 ring-inset ring-gray-900/5">
-            <span className="hidden md:inline">Over 2500 companies use our tools to better their business.</span>
+            <span className="hidden md:inline">
+              Over 2500 companies use our tools to better their business.
+            </span>
             <a href="/work" className="font-semibold text-blue-600">
-              <span className="absolute inset-0" aria-hidden="true" /> Read our customer success stories{' '}
-              <span aria-hidden="true">&rarr;</span>
+              <span className="absolute inset-0" aria-hidden="true" /> Read our
+              customer success stories <span aria-hidden="true">&rarr;</span>
             </a>
           </p>
         </div>
